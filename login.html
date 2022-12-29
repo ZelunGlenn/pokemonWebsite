@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>login</title>
+  <link rel="stylesheet" href="./header.css">
+  <link rel="stylesheet" href="./footer.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    .login {
+      padding-top: 64px;
+    }
+    .center {
+      width: 900px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    h1 {
+      font-size: 30px;
+      color: #a4a4a4;
+      line-height: 90px;
+    }
+    .box {
+      display: flex;
+      justify-content: space-between;
+    }
+    .part {
+      height: 290px;
+      width: 444px;
+      background-color: #f2f2f2;
+      border-radius: 10px;
+      padding: 20px;
+      box-sizing: border-box;
+      /*color have inheritance*/
+      color: #a4a4a4;
+    }
+    .part h3 {
+      font-size: 18px;
+    }
+    .right a {
+      background-color: #31a7d6;
+      color: #ffffff;
+      display: block;
+      width: 80px;
+      height: 34px;
+      text-decoration: none;
+      text-align: center;
+      line-height: 34px;
+      border-radius: 5px;
+      margin-top: 30px;
+      float: right;
+    }
+    .right img {
+      width: 350px;
+      margin-left: 40px;
+    }
+    .enter {
+      height: 55px;
+    }
+    .enter label {
+      line-height: 55px;
+      display: inline-block;
+      width: 100px;
+    }
+    .enter input {
+      height: 30px;
+      width: 290px;
+      background-color: #313131;
+      color: #ffffff;
+      border-radius: 3px;
+      padding-left: 3px;
+    }
+    .submit {
+      width: 76px;
+      height: 34px;
+      background-color: #4dad58;
+      border: none;
+      border-radius: 5px;
+      float: right;
+      color: #ffffff;
+      margin-top: 42px;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <div class="center">
+      <img src="./img/hf/logo-pokemon-79x45.png" alt="" class="logo">
+      <ul class="nav">
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./Pokedex.html">Pokedex</a></li>
+        <li><a href="./Shop.html">Shop</a></li>
+        <li><a href="./Catch.html">Catch</a></li>
+        <li><a href="./Match.html">Match</a></li>
+        <li><a href="./Login.html">Login</a></li>
+        <li><a href="./Setup.html">Set Up</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="login">
+    <div class="center">
+      <h1>Join Pokémon Party!</h1>
+      <div class="box">
+        <div class="left part">
+          <h3>Login</h3>
+          <!--username and password-->
+          <div class="enter">
+            <label for="">Username</label>
+            <input type="text">
+          </div>
+          <div class="enter">
+            <label for="">Password</label>
+            <input type="password">
+          </div>
+          <button class="submit">Log in</button>
+        </div>
+        <div class="right part">
+          <h3>Join</h3>
+          <p>Lorem ips Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, necessitatibus rem totam eveniet ratione amet ab accusamus! Maxime corrupti eveniet delectus error accusantium modi. Officiis voluptatem atque ex voluptate iste. um dolor sit amet consectetur adipisicing elit. Dicta illo, praesentium eligendi laboriosam quaerat quas, asperiores velit facere eos repellat quod fugit eum ipsum minus illum. Sapiente optio unde omnis?</p>
+          <!-- <button>Set Up</button> -->
+          <!-- beacause a can help user jump to other pages -->
+          <a href="./setup.html">Set Up</a>
+          <!--overlapped images-->
+          <img src="./img/ls/pokemon-login.png" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    <div class="center">
+      <h3 class="foot-tit">The Pokémon Company</h3>
+      <p class="foot-txt">©Pokémon. ©Nintendo/Creatures Inc.
+        /GAME FREAK inc.
+        ©Nintendo, Creatures, GAME FREAK, 
+        TV Tokyo, ShoPro, JR Kikaku. ©Pokémon. 
+        TM and ® are trademarks of Nintendo.</p>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <link rel="stylesheet" href="./header.css">
+  <link rel="stylesheet" href="./footer.css">
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+    }
+    
+    .home {
+      padding-top: 82px;
+      padding-bottom: 168px;
+    }
+    .center {
+      width: 900px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .v {
+      width: 900px;
+      border: 10px solid #f7c203;
+      /*box sizing*/
+      box-sizing: border-box;
+    }
+    .v video {
+      width: 100%;
+      /*for remove "ghost" white space. */
+      display: block;
+    }
+    .cards {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+    .card {
+      width: 250px;
+      border-radius: 3px;
+      overflow: hidden;
+      margin-top: 40px;
+    }
+    .card img {
+      display: block;
+      width: 100%;
+    }
+    .card p {
+      padding: 9px;
+      font-size: 14px;
+      color: #ffffff;
+    }
+  </style>
+</head>
+<body>
+  <!--header-->
+  <div class="header">
+    <div class="center">
+      <img src="./img/hf/logo-pokemon-79x45.png" alt="" class="logo">
+      <ul class="nav">
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./Pokedex.html">Pokedex</a></li>
+        <li><a href="./Shop.html">Shop</a></li>
+        <li><a href="./Catch.html">Catch</a></li>
+        <li><a href="./Match.html">Match</a></li>
+        <li><a href="./Login.html">Login</a></li>
+        <li><a href="./Setup.html">Set Up</a></li>
+      </ul>
+    </div>
+  </div>
+  <!--not include header or footer-->
+  <div class="home">
+    <div class="center">
+      <div class="v">
+        <video src="./img/index/new16x9.mp4" controls></video>
+      </div>
+      <div class="cards">
+        <div class="card" style="background-color: #a4a4a4;">
+          <img src="./img/index/arcanine-169-en.jpeg" alt="">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora molestiae optio animi asperiores eligendi itaque ducimus distinctio, repellendus modi consectetur eius temporibus sequi architecto, sunt natus perspiciatis quo voluptate aliquam.</p>
+        </div>
+        <div class="card" style="background-color: #ff90c5;">
+          <img src="./img/index/illustration-contest-winner-169.jpeg" alt="">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora molestiae optio animi asperiores eligendi itaque ducimus distinctio, repellendus modi consectetur eius temporibus sequi architecto, sunt natus perspiciatis quo voluptate aliquam.</p>
+        </div>
+        <div class="card" style="background-color: #845ac9;">
+          <img src="./img/index/pokemon-go-169-en.jpeg" alt="">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora molestiae optio animi asperiores eligendi itaque ducimus distinctio, repellendus modi consectetur eius temporibus sequi architecto, sunt natus perspiciatis quo voluptate aliquam.</p>
+        </div>
+        <div class="card" style="background-color: #e3360e;">
+          <img src="./img/index/pokemon-home-169.jpeg" alt="">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora molestiae optio animi asperiores eligendi itaque ducimus distinctio, repellendus modi consectetur eius temporibus sequi architecto, sunt natus perspiciatis quo voluptate aliquam.</p>
+        </div>
+        <div class="card" style="background-color: #313131;">
+          <img src="./img/index/pokemon-unite-169.jpeg" alt="">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora molestiae optio animi asperiores eligendi itaque ducimus distinctio, repellendus modi consectetur eius temporibus sequi architecto, sunt natus perspiciatis quo voluptate aliquam.</p>
+        </div>
+        <div class="card" style="background-color: #1b53ba;">
+          <img src="./img/index/scarlet-violet-169-en.jpeg" alt="">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora molestiae optio animi asperiores eligendi itaque ducimus distinctio, repellendus modi consectetur eius temporibus sequi architecto, sunt natus perspiciatis quo voluptate aliquam.</p>
+        </div>
+        <div class="card" style="background-color: #4dad58;">
+          <img src="./img/index/season24-on-netflix-169-en.png" alt="">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora molestiae optio animi asperiores eligendi itaque ducimus distinctio, repellendus modi consectetur eius temporibus sequi architecto, sunt natus perspiciatis quo voluptate aliquam.</p>
+        </div>
+        <div class="card" style="background-color: #ed682d;">
+          <img src="./img/index/single-battle-cup-169-en.jpeg" alt="">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora molestiae optio animi asperiores eligendi itaque ducimus distinctio, repellendus modi consectetur eius temporibus sequi architecto, sunt natus perspiciatis quo voluptate aliquam.</p>
+        </div>
+        <div class="card" style="background-color: #31a7d6;">
+          <img src="./img/index/swsh10-card-highlights-169-en.jpeg" alt="">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora molestiae optio animi asperiores eligendi itaque ducimus distinctio, repellendus modi consectetur eius temporibus sequi architecto, sunt natus perspiciatis quo voluptate aliquam.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--footer-->
+  <div class="footer">
+    <div class="center">
+      <h3 class="foot-tit">The Pokémon Company</h3>
+      <p class="foot-txt">©Pokémon. ©Nintendo/Creatures Inc.
+        /GAME FREAK inc.
+        ©Nintendo, Creatures, GAME FREAK, 
+        TV Tokyo, ShoPro, JR Kikaku. ©Pokémon. 
+        TM and ® are trademarks of Nintendo.</p>
+    </div>
+  </div>
+</body>
+</html>

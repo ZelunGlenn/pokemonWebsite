@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>pokedex</title>
+  <link rel="stylesheet" href="./header.css">
+  <link rel="stylesheet" href="./footer.css">
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+    }
+    .center {
+      width: 900px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .pokedex-head {
+      padding-top: 64px;
+      background-color: #313131;
+      height: 150px;
+    }
+    .pokedex-head .center {
+      display: flex !important;
+      justify-content: space-between;
+    }
+    .pokedex-head .right {
+      width: 450px;
+      height: 80px;
+      background-color: #4dad56;
+      color: #ffffff;
+      font-size: 20px;
+      padding: 15px;
+      border-radius: 5px;
+      margin-top: 45px;
+      line-height: 60px;
+      box-sizing: border-box;
+    }
+    .pokedex-head h2 {
+      font-size: 18px;
+      color: #ffffff;
+      line-height: 80px;
+    }
+    .search {
+      width: 296px;
+      height: 34px;
+      display: flex;
+      justify-content: space-between;
+    }
+    .search input {
+      width: 250px;
+    }
+    .search .imag {
+      /*width: 34px;
+      height: 34px;*/
+      padding: 7px;
+      background-color: #ee6b2f;
+      border-radius: 5px;
+
+    }
+    /*Use padding and equal sized image to make a search button*/
+    .search img {
+      width: 20px;
+      height: 20px;
+    }
+    .pokedex {
+      padding-bottom: 200px;
+    }
+    /*normally comm tag style can be write in a individual css file*/
+    ul {
+      list-style: none;
+    }
+    .list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+    .pokemons {
+      width: 270px;
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+    .pokemons .pic {
+      background-color: #f2f2f2;
+      padding: 20px;
+      border-radius: 5px;
+    }
+    .pokemons img {
+      width: 100%;
+      display: block;
+    }
+
+    .pokemons h4 {
+      font-size: 16px;
+      color: #a4a4a4;
+      line-height: 40px;
+    }
+    .pokemons h3 {
+      font-size: 20px;
+      color: #313131;
+      margin-bottom: 10px;
+    }
+    .attr {
+      display: flex;
+      padding-bottom:10px;
+    }
+    .attr span {
+      width: 80px;
+      height: 22px;
+      /*background-color: red;*/
+      border-radius: 3px;
+      font-size: 13px;
+      text-align: center;
+      line-height: 22px;
+      margin-right: 5px;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="header">
+    <div class="center">
+      <img src="./img/hf/logo-pokemon-79x45.png" alt="" class="logo">
+      <ul class="nav">
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./Pokedex.html">Pokedex</a></li>
+        <li><a href="./Shop.html">Shop</a></li>
+        <li><a href="./Catch.html">Catch</a></li>
+        <li><a href="./Match.html">Match</a></li>
+        <li><a href="./Login.html">Login</a></li>
+        <li><a href="./Setup.html">Set Up</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="pokedex-head">
+    <div class="center">
+      <div class="left">
+        <h2>Pokemon Code: </h2>
+        <!--search area-->
+        <div class="search">
+          <input type="text">
+          <div class="imag">
+            <img src="./img/index/input-search-bg.png" alt="">
+          </div>
+        </div>
+      </div>
+      <p class="right">Type the code of the pokemon.</p>
+    </div>
+  </div>
+  <div class="pokedex">
+    <div class="center">
+      <!--each pokemon added into a li tag-->
+      <ul class="list" id="list">
+        <li class="pokemons">
+          <div class="pic">
+            <img src="./img/poke/001.png" alt="">
+          </div>
+          <h4>#001</h4>
+          <h3>Bulbasaur</h3>
+          <div class="attr">
+            <span style = "background-color: #9bcc50; color: #212121;">grass</span>
+            <span style="background-color: #b97fca; color: #ffff;">poison</span>
+          </div>
+        </li>
+        <li class="pokemons">
+          <div class="pic">
+            <img src="./img/poke/002.png" alt="">
+          </div>
+          <h4>#002</h4>
+          <h3>Ivysaur</h3>
+          <div class="attr">
+            <span style = "background-color: #9bcc50; color: #212121;">grass</span>
+            <span style="background-color: #b97fca; color: #ffff;">poison</span>
+          </div>
+        </li>
+        <li class="pokemons">
+          <div class="pic">
+            <img src="./img/poke/003.png" alt="">
+          </div>
+          <h4>#003</h4>
+          <h3>Venusaur</h3>
+          <div class="attr">
+            <span style = "background-color: #9bcc50; color: #212121;">grass</span>
+            <span style="background-color: #b97fca; color: #ffff;">poison</span>
+          </div>
+        </li>
+        <li class="pokemons">
+          <div class="pic">
+            <img src="./img/poke/004.png" alt="">
+          </div>
+          <h4>#004</h4>
+          <h3>Charmander</h3>
+          <div class="attr">
+            <span style = "background-color: #fd7d23; color: #ffff;">fire</span>
+            <span style="background-color:transparent; color:transparent;">poison</span>
+          </div>
+        </li>
+        <li class="pokemons">
+          <div class="pic">
+            <img src="./img/poke/005.png" alt="">
+          </div>
+          <h4>#005</h4>
+          <h3>Charmeleon</h3>
+          <div class="attr">
+            <span style = "background-color: #fd7d23; color: #ffff;">fire</span>
+            <span style="background-color:transparent; color:transparent;">poison</span>
+          </div>
+        </li>
+        <li class="pokemons">
+          <div class="pic">
+            <img src="./img/poke/006.png" alt="">
+          </div>
+          <h4>#006</h4>
+          <h3>Charizard</h3>
+          <div class="attr">
+            <span style = "background-color: #fd7d23; color: #ffff;">fire</span>
+            <span style="background-color:#3ec8f0; color:#212121;">fly</span>
+          </div>
+        </li>
+        <li class="pokemons">
+          <div class="pic">
+            <img src="./img/poke/007.png" alt="">
+          </div>
+          <h4>#007</h4>
+          <h3>Squirtle</h3>
+          <div class="attr">
+            <span style = "background-color: #4592c4; color: #ffff;">water</span>
+            <span style="background-color:transparent; color:transparent;">fly</span>
+          </div>
+        </li>
+        <li class="pokemons">
+          <div class="pic">
+            <img src="./img/poke/008.png" alt="">
+          </div>
+          <h4>#008</h4>
+          <h3>Wartortle</h3>
+          <div class="attr">
+            <span style = "background-color: #4592c4; color: #ffff;">water</span>
+            <span style="background-color:transparent; color:transparent;">fly</span>
+          </div>
+        </li>
+        <li class="pokemons">
+          <div class="pic">
+            <img src="./img/poke/009.png" alt="">
+          </div>
+          <h4>#009</h4>
+          <h3>Blastoise</h3>
+          <div class="attr"> 
+            <span style = "background-color: #4592c4; color: #ffff;">water</span>
+            <span style="background-color:transparent; color:transparent;">fly</span>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer">
+    <div class="center">
+      <h3 class="foot-tit">The Pokémon Company</h3>
+      <p class="foot-txt">©Pokémon. ©Nintendo/Creatures Inc.
+        /GAME FREAK inc.
+        ©Nintendo, Creatures, GAME FREAK, 
+        TV Tokyo, ShoPro, JR Kikaku. ©Pokémon. 
+        TM and ® are trademarks of Nintendo.</p>
+    </div>
+  </div>
+</body>
+</html>
