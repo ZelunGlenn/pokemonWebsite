@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>catch</title>
+  <link rel="stylesheet" href="./header.css">
+  <link rel="stylesheet" href="./footer.css">
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+    }
+    .catch {
+      padding-top: 130px;
+      padding-bottom: 200px;
+    }
+    .center {
+      width: 900px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .bg {
+      width: 900px;
+      height: 440px;
+      background-image: url(./img/catch/bg.webp);
+      border:5px solid #000;
+      background-size: cover;
+    }
+    .top {
+      display: flex;
+      justify-content: space-between;
+    }
+    .top img {
+      width: 250px;
+    }
+    .ball {
+      width: 150px;
+      height: 150px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 190px;
+    }
+    .ball img {
+      display: block;
+      width: 100%;
+    }
+    .mark {
+      /*disactive*/
+      display: none;
+      background-color: rgba(0, 0, 0, 0.3);
+      position: fixed;
+      right: 0;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      z-index: 199;
+    }
+    .show {
+      display: block;
+    }
+    .mark .close {
+      width: 50px;
+      height: 50px;
+      font-size: 30px;
+      float: right;
+    }
+    .mark .card {
+      width: 300px;
+      height: 410px;
+      padding: 20px;
+      box-sizing: border-box;
+      background-color: #fff;
+      border-radius: 10px;
+      /*make card in the middle*/
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      margin: auto;
+    }
+    .card .pic {
+      background-color: #eee;
+    }
+    .card .pic img{
+      display: block;
+      width: 100%;
+    }
+    .card .box {
+      display: flex;
+      justify-content: space-between;
+    }
+    .box .left h5 {
+      line-height: 26px;
+      font-size: 16px;
+    }
+    .box .left h3 {
+      line-height: 34px;
+      font-size: 20px;
+    }
+    .box .left ul {
+      list-style: none;
+      display: flex;
+    }
+    .box .left ul li {
+      font-size: 13px;
+      color: #fff;
+      border-radius: 3px;
+      padding: 3px 15px;
+      margin-right: 5px;
+      background-color: blue; 
+    }
+    .box .left h4 {
+      font-size: 16px;
+      line-height: 30px;
+    }
+    .box .want {
+      margin-top: 40px;
+      width: 60px;
+      height: 60px;
+      background-color: #f7c203;
+      border: 5px solid #1744b5;
+      border-radius: 50%;
+      font-size: 17px;
+      color: #666;
+      text-align: center;
+      line-height: 60px;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <div class="center">
+      <img src="./img/hf/logo-pokemon-79x45.png" alt="" class="logo">
+      <ul class="nav">
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./Pokedex.html">Pokedex</a></li>
+        <li><a href="./Shop.html">Shop</a></li>
+        <li><a href="./Catch.html">Catch</a></li>
+        <li><a href="./Match.html">Match</a></li>
+        <li><a href="./Login.html">Login</a></li>
+        <li><a href="./Setup.html">Set Up</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="catch">
+    <div class="center">
+      <div class="bg">
+        <div class="top">
+          <img src="./img/catch/craft.png" alt="">
+          <img src="./img/catch/craft.png" alt="">
+          <img src="./img/catch/craft.png" alt="">
+        </div>
+        <div class="ball">
+          <img src="./img/catch/ball.png" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--hidden spot-->
+  <div class="mark show">
+    <button class="close">X</button>
+    <div class="card">
+      <div class="pic">
+        <img src="./img/poke/073.png" alt="">
+      </div>
+      <div class="box">
+        <div class="left">
+          <h5>#073</h5>
+          <h3>Fish</h3>
+          <ul>
+            <li>water</li>
+            <li>poison</li>
+          </ul>
+          <h4>combat: 10</h4>
+        </div>
+        <div class="want">
+          want
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    <div class="center">
+      <h3 class="foot-tit">The Pokémon Company</h3>
+      <p class="foot-txt">©Pokémon. ©Nintendo/Creatures Inc.
+        /GAME FREAK inc.
+        ©Nintendo, Creatures, GAME FREAK, 
+        TV Tokyo, ShoPro, JR Kikaku. ©Pokémon. 
+        TM and ® are trademarks of Nintendo.</p>
+    </div>
+  </div>
+</body>
+</html>
